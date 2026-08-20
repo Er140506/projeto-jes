@@ -1,0 +1,114 @@
+.conteiner {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+
+  /* Fundo preto profundo com degradê suave */
+  background: linear-gradient(135deg, #111111, #1a1a1a);
+}
+
+.conteiner form {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+
+  /* Fundo do formulário em preto fosco */
+  background: #1f1f1f;
+  border-radius: 20px;
+
+  /* Sombra escura e borda fina dourada para destaque */
+  border: 1px solid #d4af37;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+
+  box-sizing: border-box;
+}
+
+.conteiner h1 {
+  margin: 0 0 30px;
+  text-align: center;
+
+  font-size: 30px;
+  /* Texto principal em dourado */
+  color: #d4af37;
+}
+
+.conteiner form > div {
+  margin-bottom: 18px;
+}
+
+.conteiner input {
+  width: 100%;
+  padding: 14px 16px;
+
+  box-sizing: border-box;
+
+  /* Inputs escuros com bordas discretas */
+  background: #2a2a2a;
+  border: 2px solid #333333;
+  color: #ffffff;
+  border-radius: 10px;
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition: 0.3s;
+}
+
+.conteiner input:focus {
+  /* Foco do input muda para dourado */
+  border-color: #d4af37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+}
+
+.conteiner input::placeholder {
+  /* Placeholder cinza para leitura no fundo escuro */
+  color: #777777;
+}
+
+.conteiner button {
+  width: 100%;
+  padding: 14px;
+
+  margin-top: 5px;
+
+  border: none;
+  border-radius: 10px;
+
+  /* Botão dourado com texto preto */
+  background: #d4af37;
+  color: #111111;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.conteiner button:hover {
+  /* Efeito hover com dourado mais escuro e brilho */
+  background: #aa8c2c;
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+}
+
+.conteiner button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 500px) {
+  .conteiner form {
+    padding: 30px 20px;
+  }
+
+  .conteiner h1 {
+    font-size: 25px;
+  }
+}
